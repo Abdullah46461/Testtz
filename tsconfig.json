@@ -1,0 +1,25 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.json",
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "target": "ESNext",                   // Современный JavaScript
+    "module": "ESNext",                   // Модули ES
+    "moduleResolution": "node",           // Разрешение модулей по правилам Node.js
+    "strict": true,                       // Включает строгий режим TypeScript
+    "jsx": "preserve",                    // Если используется JSX/TSX
+    "esModuleInterop": true,              // Поддержка CommonJS
+    "skipLibCheck": true,                 // Пропуск проверки типов в библиотеках
+    "types": ["vite/client"],             // Типы для Vite
+    "baseUrl": ".",                       // Базовый путь
+    "paths": {
+      "@/*": ["src/*"]                    // Alias для упрощения импортов
+    },
+    "allowSyntheticDefaultImports": true // Разрешить синтетические импорты
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules"]
+}
