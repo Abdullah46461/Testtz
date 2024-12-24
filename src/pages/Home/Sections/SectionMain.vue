@@ -71,6 +71,13 @@ export default {
 </script>
 
 <style lang="css" scoped>
+@media (max-width: 768px) {
+  .title {
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+
 .section {
   margin-top: 32px;
   display: flex;
@@ -84,7 +91,6 @@ export default {
 }
 
 .title {
-  text-align: center;
   font-family: "NissanBrandLight";
   font-size: 48px; /* Размер текста */
   line-height: 64px;
@@ -97,14 +103,8 @@ export default {
 }
 
 .custom-arrows {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  z-index: 10;
 }
 .template-list {
   display: flex;
