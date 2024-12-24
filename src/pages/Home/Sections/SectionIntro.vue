@@ -12,10 +12,8 @@ export default {
         <img src="@/assets/images/mounte.png" alt="" class="mountains" />
         <img src="@/assets/images/text.svg" alt="" class="intro-text" />
       </div>
-
-      <img src="@/assets/images/car.png" alt="" class="car" />
-
       <Button class="button" />
+      <!--      <img src="@/assets/images/car.png" alt="" class="car" />-->
     </div>
   </div>
 </template>

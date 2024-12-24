@@ -6,19 +6,19 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "target": "ESNext",                   // Современный JavaScript
-    "module": "ESNext",                   // Модули ES
-    "moduleResolution": "node",           // Разрешение модулей по правилам Node.js
-    "strict": true,                       // Включает строгий режим TypeScript
-    "jsx": "preserve",                    // Если используется JSX/TSX
-    "esModuleInterop": true,              // Поддержка CommonJS
-    "skipLibCheck": true,                 // Пропуск проверки типов в библиотеках
-    "types": ["vite/client"],             // Типы для Vite
-    "baseUrl": ".",                       // Базовый путь
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["vite/client"],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]                    // Alias для упрощения импортов
+      "@/*": ["src/*"]
     },
-    "allowSyntheticDefaultImports": true // Разрешить синтетические импорты
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["node_modules"]
